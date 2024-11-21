@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+    <link rel="stylesheet" href="style.css"> <!-- Vincula el archivo CSS -->
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-title">
+                <img src="imagenes/Logo2.png" alt="Logo">
+                <h1>Edu-Mentes</h1>
+            </div>
+            <nav>
+                <a href="index.html"><img src="imagenes/inicio.png" alt="inicio"></a>
+                
+                <a href="Soporte.html"><img src="imagenes/soporte.png" alt="soporte"></a>
+
+                <a href="Cerrarsesion.html"><img src="imagenes/cerrar.png" alt="cerrar sesión"></a>
+
+            </nav>
+        </header>
+        <div class="login-container">
+            <h2>INICIO DE SESIÓN</h2>
+            <form action="#">
+                <input type="text" placeholder="Nombre de usuario" required>
+                <input type="password" placeholder="Contraseña" id="password" required>
+                <div class="show-password">
+                    <input type="checkbox" id="showPassword" onclick="togglePassword()">
+                    <label for="showPassword">Mostrar contraseña</label>
+                </div>
+                <div class="remember-me">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Recuérdame</label>
+                </div>
+                <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
+                <button type="submit">INICIAR SESIÓN</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function togglePassword() {
+            var passwordInput = document.getElementById("password");
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+            } else {
+                passwordInput.type = "password";
+            }
+        }
+    </script>
+</body>
+</html>

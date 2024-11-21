@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffcf79;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    width: 100%;
+    max-width: 600px; 
+    margin: auto;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c4e77a;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 93%; 
+}
+
+header .logo-title {
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #4da944;
+    margin-left: 10px;
+}
+
+header nav {
+    display: flex;
+    gap: 10px;
+}
+
+header nav img {
+    width: 32px;
+    height: 32px;
+}
+
+#barra-tiempo {
+    height: 20px;
+    background-color: #4caf50;
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#pregunta {
+    font-size: 24px;
+    margin: 20px 0;
+    text-align: center; 
+}
+
+#respuesta {
+    font-size: 18px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 25%; 
+}
+
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#retroalimentacion {
+    font-size: 18px;
+    margin: 10px 0;
+    text-align: center; 
+}
+
+.correcto {
+    color: green;
+}
+
+.incorrecto {
+    color: red;
+}
+
+#confeti {
+    display: none;
+}
